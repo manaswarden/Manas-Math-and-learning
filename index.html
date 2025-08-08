@@ -4,34 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Tutoring by Manas Aza</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #004080, #0066cc);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        /* Sections */
+        section {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section h2 {
+            color: #004080;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        /* Service Cards */
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: #0066cc;
+            margin-bottom: 0.5rem;
+        }
+        /* Contact Button */
+        .contact-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #004080;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        .contact-button:hover {
+            background-color: #0066cc;
+        }
+        /* Footer */
+        footer {
+            background-color: #eee;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        /* Mobile Friendly */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Math Tutoring by Manas Aza</h1>
-        <p>Helping students build confidence in math!</p>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Math Tutoring by Manas Aza</h1>
+            <p>Helping kids in Grades 1–7 master math with confidence</p>
+        </div>
     </header>
 
+    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi! I'm Manas Aza, a passionate math tutor who helps students from grades 4–12 improve their math skills, prepare for exams, and build confidence. I offer flexible scheduling and personalized lessons tailored to each student's needs.</p>
+        <p>Hi! I'm Manas Aza, a dedicated math tutor who helps students from grades 1–7 improve their math skills, prepare for school tests, and build a love for learning. Lessons are personalized, fun, and designed to match each student's pace.</p>
     </section>
 
+    <!-- Services Section -->
     <section id="services">
-        <h2>Subjects & Pricing</h2>
-        <ul>
-            <li>✔️ Pre-Algebra, Algebra I & II</li>
-            <li>✔️ Geometry, Trigonometry</li>
-            <li>✔️ Pre-Calculus, Calculus AB</li>
-            <li>💰 <strong>FREE lessons available! Contact me to learn more.</strong></li>
-        </ul>
+        <h2>My Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Basic Math Skills</h3>
+                <p>For Grades 1–3: Counting, addition, subtraction, and early problem-solving skills.</p>
+            </div>
+            <div class="card">
+                <h3>Intermediate Math</h3>
+                <p>For Grades 4–5: Multiplication, division, fractions, and decimals.</p>
+            </div>
+            <div class="card">
+                <h3>Pre-Algebra Foundations</h3>
+                <p>For Grades 6–7: Pre-algebra concepts, word problems, and early equations.</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Future Video Section -->
+    <section id="video">
+        <h2>Learn More</h2>
+        <p>Coming soon: A short video introducing my tutoring style and approach!</p>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>📧 Email: <a href="mailto:manaswarden@gmail.com">manaswarden@gmail.com</a></p>
+        <p>Email me to schedule a free first lesson:</p>
+        <a class="contact-button" href="mailto:manaswarden@gmail.com">📧 Email Manas</a>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>© 2025 Math Tutoring by Manas Aza. All rights reserved.</p>
     </footer>
